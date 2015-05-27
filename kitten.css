@@ -1,0 +1,37 @@
+* { /*sizes boxes to avoid adding issues with padding and border */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Crafty Girls', cursive;
+  background-color: #F2D99C;
+  color: #35203B;
+}
+
+h1 {
+  font-family: 'Fugaz One', cursive;
+  text-align: center;
+}
+
+.grid_6 { /*borders pictures*/
+  border-width: 8px;
+  border-style: double;
+
+}
+
+.option1 { /*left cat border is red*/
+  border-color: #D90000;
+}
+
+.option2 { /*right cat border is blue*/
+  border-color: #04518C;
+}
+
+.grid_6:hover { /*hover over changes to green */
+  border-color: #85DB18;
+}
+
+.grid_6:active { /*on click changes to yellow */
+  border-color: #FFC200;
+}
+
