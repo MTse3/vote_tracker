@@ -1,5 +1,14 @@
 window.onload = function () {
-  var pics;
+
+  //possibly use for no repeat
+  // function someName(one, two, max) {
+  //   var newNum;
+  //   do {
+  //     newNum = Math.floor(Math.random() * max);
+  //   } while(newNum == one || newNum == two)
+  //   return newNum;
+  // }
+
   var  Game = function() {
 
     $.ajax({
@@ -8,11 +17,17 @@ window.onload = function () {
         xhr.setRequestHeader('Authorization', 'Client-ID 11c372c0f3dfff2');
       }
     })
-
     .done( function(pics) {
-      var catPicsArray = []; //loops through and selects each image
+      makeCats(pics);
+    }).fail( function() { //Shows message if not sucessful
+      $('.grid_6').html('Can not load picture at the moment. Meow!')
+    });
+
+  }
+  makeCats = function (image1) {
+    var catPicsArray = []; //loops through and selects each image
       for (var i = 0; i < 14; i++) {
-        catPicsArray.push(pics.data.images[i].link);
+        catPicsArray.push(image1.data.images[i].link);
       };
 
       var ChooseCat = function () {
@@ -23,12 +38,10 @@ window.onload = function () {
       var $option2 = new ChooseCat();
       $option1.prependTo('#cat-pic');
       $option2.prependTo('#cat-pic2');
-
-    }).fail( function() { //Shows message if not sucessful
-      $('.grid_6').html('Can not load picture at the moment. Meow!')
-    });
-
   }
+  makeCats.prototype.ChooseCat = function() {
+
+  };
 
   //for tracking vote totals
   $('section.grid_6').on('click', function(){

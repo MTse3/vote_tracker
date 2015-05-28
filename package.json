@@ -1,0 +1,22 @@
+{
+  "name": "vote_tracker",
+  "version": "1.0.0",
+  "description": "This app should have users vote between two kittens shown on the screen and give the total number of votes that they have recieved. Pictures are from imgur on the internet. Currently images do not hide after pressing button to vote again.",
+  "main": "kitten.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MTse3/vote_tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MTse3/vote_tracker/issues"
+  },
+  "homepage": "https://github.com/MTse3/vote_tracker#readme",
+  "dependencies": {
+    "express": "^4.12.4"
+  }
+}
