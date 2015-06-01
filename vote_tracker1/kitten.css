@@ -31,7 +31,7 @@ h1 {
   border-color: #85DB18;
 }
 
-.grid_6:active { /*on click changes to yellow */
+.win:active { /*on click changes to yellow */
   border-color: #FFC200;
 }
 
