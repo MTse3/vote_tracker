@@ -13,7 +13,7 @@ h1 {
   text-align: center;
 }
 
-.grid_6 { /*borders pictures*/
+.pic { /*borders pictures*/
   border-width: 8px;
   border-style: double;
 
@@ -27,11 +27,17 @@ h1 {
   border-color: #04518C;
 }
 
-.grid_6:hover { /*hover over changes to green */
+.pic:hover { /*hover over changes to green */
   border-color: #85DB18;
 }
 
-.win:active { /*on click changes to yellow */
+.pic:active { /*on click changes to yellow */
   border-color: #FFC200;
 }
-
+.winner {
+  border-color: #FFC200;
+  background-color: #FFC200;
+}
+.winner:hover {
+  border-color: #FFC200;
+}
